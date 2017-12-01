@@ -1,0 +1,12 @@
+<h1>All billboards!</h1>
+
+<hr />
+
+<%= link_to 'New Billboard', new_billboard_path%>
+<br />
+
+<ul>
+    <% @billboards.each do |billboard| %>
+        <li><%= link_to billboard.title, billboard_path(billboard.id) %></l1>
+    <% end %>
+</ul>
